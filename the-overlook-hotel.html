@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Overlook Hotel — Book of the Doomed</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="favonpng (1).png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Spectral SC', serif;
+      background-color: #0d0d0d;
+      color: #e6e6e6;
+    }
+    .hero {
+      background-image: url('https://images.squarespace-cdn.com/content/v1/555f43ace4b09cfed988524e/1590239711593-KM5JJ55V10NE7ZH0B9AF/screenshot082.jpg?format=1500w');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .hero p {
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      line-height: 1.6;
+    }
+    .section-title {
+      font-size: 1.6rem;
+      margin-top: 2rem;
+      color: #ff4d4d;
+    }
+    .danger {
+      color: crimson;
+      font-weight: bold;
+    }
+    .quote {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      border-left: 4px solid #ff4d4d;
+      font-style: italic;
+      margin: 1.5rem 0;
+    }
+    .btn-section {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .book-btn {
+      background-color: #3e3e3e;
+      border: 1px solid #999;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .book-btn:hover {
+      background-color: crimson;
+      border-color: #fff;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #aaa;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>The Overlook Hotel</h1>
+    <p>All work and no play makes this a killer getaway.</p>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Overview</h2>
+    <p><strong>Genre:</strong> Psychological/Supernatural Horror<br />
+    <strong>First Appearance:</strong> The Shining (1980)<br />
+    <strong>Danger Level:</strong> <span class="danger">🩸🩸🩸🩸</span></p>
+
+    <h2 class="section-title">The Lore</h2>
+    <p>Perched high in the Colorado Rockies, the Overlook Hotel is a historical retreat… with a sinister afterlife. Once the caretaking job of Jack Torrance, a struggling writer and father, the hotel revealed its true nature through blood-soaked visions, ghostly bartenders, and a very persuasive ballroom from another realm.</p>
+
+    <p>Its long corridors echo with laughter and screams from eras long gone. It’s unclear whether the hotel corrupts the mind—or reveals it. The ghosts don't just haunt the Overlook. They host it.</p>
+
+    <h2 class="section-title">Visitor Guide</h2>
+    <ul>
+      <li><strong>What to Expect:</strong> Vintage decor, psychic disturbances, blood-filled elevators, and redrum graffiti.</li>
+      <li><strong>Recommended Gear:</strong> Typewriter (for show), psychic sensitivity, a good sense of direction (you’ll need it for the hedge maze).</li>
+      <li><strong>Activities:</strong> Maze races, ghost therapy, room 237 escape challenges.</li>
+      <li><strong>What Not to Do:</strong> Stay isolated too long, trust the bar staff, or write "All work and no play..." too many times.</li>
+    </ul>
+
+    <h2 class="section-title">Access & Travel</h2>
+    <p>Accessible only by mountain roads, often snowed in. Once inside, you may never leave — even if you check out.</p>
+
+    <h2 class="section-title">Traveler Reviews</h2>
+    <div class="quote">"The view was killer. So was my husband by day three. Would come again!"</div>
+    <div class="quote">"Room 237 smells like secrets and cheap perfume. 10/10 spooky."</div>
+
+    <div class="btn-section">
+      <button class="book-btn" id="bookBtn">Book Now</button>
+      <br /><a href="index.html" class="back-link">← Return to All Destinations</a>
+    </div>
+  </main>
+
+  <script>
+    const btn = document.getElementById('bookBtn');
+    btn.addEventListener('click', () => {
+      if (btn.textContent === 'Book Now') {
+        btn.textContent = 'Booked!';
+      } else {
+       alert("Error: You are now part of the Overlook's permanent guests. No cancellations.");
+      }
+      }
+    );
+  </script>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Woodsboro — Book of the Doomed</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="favonpng (1).png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Spectral SC', serif;
+      background-color: #0d0d0d;
+      color: #e6e6e6;
+    }
+    .hero {
+      background-image: url('https://static1.moviewebimages.com/wordpress/wp-content/uploads/2022/06/Woodsboro-1200x630.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .hero p {
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      line-height: 1.6;
+    }
+    .section-title {
+      font-size: 1.6rem;
+      margin-top: 2rem;
+      color: #ff4d4d;
+    }
+    .danger {
+      color: crimson;
+      font-weight: bold;
+    }
+    .quote {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      border-left: 4px solid #ff4d4d;
+      font-style: italic;
+      margin: 1.5rem 0;
+    }
+    .btn-section {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .book-btn {
+      background-color: #3e3e3e;
+      border: 1px solid #999;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .book-btn:hover {
+      background-color: crimson;
+      border-color: #fff;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #aaa;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Woodsboro</h1>
+    <p>Do you like scary movies? Good — you're already in one.</p>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Overview</h2>
+    <p><strong>Genre:</strong> Slasher / Meta-Horror<br />
+    <strong>First Appearance:</strong> Scream (1996)<br />
+    <strong>Danger Level:</strong> <span class="danger">🩸🩸🩸</span></p>
+
+    <h2 class="section-title">The Lore</h2>
+    <p>Woodsboro is a quaint little town with a killer tradition — literally. From masked figures creeping around high school parties to sudden, stabbing phone calls, this destination is a meta-nightmare where pop culture and body counts collide.</p>
+
+    <p>With each generation, the Ghostface killer rises anew, always remixing the rules of horror. It’s a modern legend where knowing the tropes doesn’t always save you — but it helps.</p>
+
+    <h2 class="section-title">Visitor Guide</h2>
+    <ul>
+      <li><strong>What to Expect:</strong> High schoolers with too much genre knowledge, surprise phone calls, and a knife-wielding masked menace.</li>
+      <li><strong>Recommended Gear:</strong> Caller ID, running shoes, and a suspicious mind.</li>
+      <li><strong>Activities:</strong> Trivia nights, horror movie marathons, home invasion drills.</li>
+      <li><strong>What Not to Do:</strong> Say “I’ll be right back.”</li>
+    </ul>
+
+    <h2 class="section-title">Access & Travel</h2>
+    <p>Suburban setting with surprisingly high murder rates. Local police are… doing their best.</p>
+
+    <h2 class="section-title">Traveler Reviews</h2>
+    <div class="quote">"Brought my film class here. 3/5 survived. Very immersive experience."</div>
+    <div class="quote">"It’s like being inside a horror movie — but with worse cell signal."</div>
+
+    <div class="btn-section">
+      <button class="book-btn" id="bookBtn">Book Now</button>
+      <br /><a href="index.html" class="back-link">← Return to All Destinations</a>
+    </div>
+  </main>
+
+  <script>
+    const btn = document.getElementById('bookBtn');
+    btn.addEventListener('click', () => {
+      if (btn.textContent === 'Book Now') {
+        btn.textContent = 'Booked!';
+      } else {
+        alert("Error: You've answered the call. There's no going back now.");
+      }
+    });
+  </script>
+</body>
+<script src="script.js"></script>
+</html>

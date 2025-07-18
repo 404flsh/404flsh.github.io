@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crystal Lake — Book of the Doomed</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="favonpng (1).png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Spectral SC', serif;
+      background-color: #0d0d0d;
+      color: #e6e6e6;
+    }
+    .hero {
+      background-image: url('https://i0.wp.com/beardedgentlemenmusic.com/wp-content/uploads/2020/06/6.png?resize=853%2C480&ssl=1');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .hero p {
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      line-height: 1.6;
+    }
+    .section-title {
+      font-size: 1.6rem;
+      margin-top: 2rem;
+      color: #ff4d4d;
+    }
+    .danger {
+      color: crimson;
+      font-weight: bold;
+    }
+    .quote {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      border-left: 4px solid #ff4d4d;
+      font-style: italic;
+      margin: 1.5rem 0;
+    }
+    .btn-section {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .book-btn {
+      background-color: #3e3e3e;
+      border: 1px solid #999;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .book-btn:hover {
+      background-color: crimson;
+      border-color: #fff;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #aaa;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Crystal Lake</h1>
+    <p>Campfire tales come alive — just not in a good way.</p>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Overview</h2>
+    <p><strong>Genre:</strong> Slasher Horror<br />
+    <strong>First Appearance:</strong> Friday the 13th (1980)<br />
+    <strong>Danger Level:</strong> <span class="danger">🩸🩸🩸🩸🩸</span></p>
+
+    <h2 class="section-title">The Lore</h2>
+    <p>Camp Crystal Lake was supposed to be a wholesome retreat. That ended the moment a young boy named Jason Voorhees drowned due to counselor negligence. His mother sought revenge... and now Jason himself roams the woods, silent and unstoppable, wearing his infamous hockey mask.</p>
+
+    <p>Camp has never been the same. Bonfires become funeral pyres, and cabins echo with unearthly silence between screams. If you're hiking near the lake, and you hear heavy breathing — run.</p>
+
+    <h2 class="section-title">Visitor Guide</h2>
+    <ul>
+      <li><strong>What to Expect:</strong> Dense forests, creepy old cabins, foggy lakes, and sudden machete swings.</li>
+      <li><strong>Recommended Gear:</strong> Running shoes, garlic (just in case), fake counselor ID to blend in.</li>
+      <li><strong>Activities:</strong> Canoeing, campfire horror storytelling, scream therapy, survival skills crash courses.</li>
+      <li><strong>What Not to Do:</strong> Don’t go skinny-dipping, don’t split up, and definitely don’t say “It’s just a myth.”</li>
+    </ul>
+
+    <h2 class="section-title">Access & Travel</h2>
+    <p>Technically closed since 1980, but unofficially accessible via poorly maintained forest roads. Locals pretend it doesn’t exist — for good reason.</p>
+
+    <h2 class="section-title">Traveler Reviews</h2>
+    <div class="quote">"Jason is such a strong, silent type. We love a consistent killer."</div>
+    <div class="quote">"Booked a team-building retreat — only two of us made it out. Still better than our office party."
+    <br />– Monika, HR Manager</div>
+
+    <div class="btn-section">
+      <button class="book-btn" id="bookBtn">Book Now</button>
+      <br /><a href="index.html" class="back-link">← Return to All Destinations</a>
+    </div>
+  </main>
+
+  <script>
+    const btn = document.getElementById('bookBtn');
+    btn.addEventListener('click', () => {
+      if (btn.textContent === 'Book Now') {
+        btn.textContent = 'Booked!';
+      } else {
+        alert('Error: Camp rules are clear — no refunds, no exceptions.');
+      }
+    });
+  </script>
+</body>
+<script src="script.js"></script>
+</html>

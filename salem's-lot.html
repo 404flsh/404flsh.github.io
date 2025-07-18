@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salem’s Lot — Book of the Doomed</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="favonpng (1).png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Spectral SC', serif;
+      background-color: #000;
+      color: #eee;
+    }
+    .hero {
+      background-image: url('https://bloody-disgusting.com/wp-content/uploads/2024/09/Screenshot-2024-09-12-120835.png');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .hero p {
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      line-height: 1.6;
+    }
+    .section-title {
+      font-size: 1.6rem;
+      margin-top: 2rem;
+      color: #ff1a1a;
+    }
+    .danger {
+      color: crimson;
+      font-weight: bold;
+    }
+    .quote {
+      background-color: #111;
+      padding: 1rem;
+      border-left: 4px solid #ff1a1a;
+      font-style: italic;
+      margin: 1.5rem 0;
+    }
+    .btn-section {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .book-btn {
+      background-color: #1a1a1a;
+      border: 1px solid #888;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .book-btn:hover {
+      background-color: crimson;
+      border-color: #fff;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #aaa;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Salem’s Lot</h1>
+    <p>Come for the small-town charm, stay for the vampires. Or don’t. They might invite you in anyway.</p>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Overview</h2>
+    <p><strong>Genre:</strong> Supernatural Horror / Vampire<br />
+    <strong>First Appearance:</strong> Salem’s Lot (1979)<br />
+    <strong>Danger Level:</strong> <span class="danger">🩸🩸🩸🩸</span></p>
+
+    <h2 class="section-title">The Lore</h2>
+    <p>Salem’s Lot is a sleepy New England town with a deadly secret — it’s crawling with the undead. Beneath its quaint charm lies a festering infestation of vampires, drawn in by darkness, feeding off the innocent and turning neighbors into nocturnal predators.</p>
+
+    <p>Don’t let the white picket fences fool you — once the sun sets, the real town awakens. Hope you brought garlic and a healthy fear of basements.</p>
+
+    <h2 class="section-title">Visitor Guide</h2>
+    <ul>
+      <li><strong>What to Expect:</strong> Sudden silence at dusk, glowing eyes behind curtains, levitating children tapping on windows.</li>
+      <li><strong>Recommended Gear:</strong> Crucifix, mirrors, strong moral convictions.</li>
+      <li><strong>Activities:</strong> Church recon, late-night stake crafting, crypt escape rooms.</li>
+      <li><strong>What Not to Do:</strong> Accept unexpected guests after dark.</li>
+    </ul>
+
+    <h2 class="section-title">Access & Travel</h2>
+    <p>Standard roads apply. Local bus line may be eerily empty. GPS may mysteriously stop working at dusk.</p>
+
+    <h2 class="section-title">Traveler Reviews</h2>
+    <div class="quote">"My Airbnb host vanished in a cloud of smoke. Still better than the place I stayed in Brooklyn."</div>
+    <div class="quote">"I came here to write my novel. Now I write in blood. 10/10."</div>
+
+    <div class="btn-section">
+      <button class="book-btn" id="bookBtn">Book Now</button>
+      <br /><a href="index.html" class="back-link">← Return to All Destinations</a>
+    </div>
+  </main>
+
+  <script>
+    const btn = document.getElementById('bookBtn');
+    btn.addEventListener('click', () => {
+      if (btn.textContent === 'Book Now') {
+        btn.textContent = 'Booked!';
+      } else {
+        alert("Error: You’ve been invited in. Forever.");
+      }
+    });
+  </script>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400&family=Spectral+SC:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>Silent Hill — Book of the Doomed</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="favonpng (1).png">
+</head>
+<body>
+  <header class="hero">
+    <h1>Silent Hill</h1>
+    <p>Where fog isn’t just weather — it’s warning.</p>
+  </header>
+
+<style>
+    body {
+      margin: 0;
+      font-family: 'Spectral SC', serif;
+      background-color: #0f0f0f;
+      color: #e0e0e0;
+    }
+    .hero {
+      background-image: url('https://i.redd.it/1gq83ur4kbxd1.jpeg');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .hero p {
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      line-height: 1.6;
+    }
+    .section-title {
+      font-size: 1.6rem;
+      margin-top: 2rem;
+      color: #ff6666;
+    }
+    .danger {
+      color: crimson;
+      font-weight: bold;
+    }
+    .quote {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      border-left: 4px solid #ff6666;
+      font-style: italic;
+      margin: 1.5rem 0;
+    }
+    .btn-section {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .book-btn {
+      background-color: #3e3e3e;
+      border: 1px solid #999;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .book-btn:hover {
+      background-color: crimson;
+      border-color: #fff;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #aaa;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      color: #fff;
+    }
+  </style>
+
+  <main class="container">
+    <h2 class="section-title">Overview</h2>
+    <p><strong>Genre:</strong> Psychological / Supernatural Horror<br />
+    <strong>First Appearance:</strong> Silent Hill (2006 film adaptation)<br />
+    <strong>Danger Level:</strong> <span class="danger">🩸🩸🩸🩸🩸</span></p>
+
+    <h2 class="section-title">The Lore</h2>
+    <p>Founded as a mining town, Silent Hill became a nexus of supernatural activity after a cult attempted a sacrificial ritual to birth their deity. What followed was fire, tragedy, and the shrouding of the town in unending fog and ash.
+    
+    Visitors who enter may find themselves shifting between dimensions — one bleak and ghostly, the other industrial and bloodstained. At its core lies Alessa Gillespie, a girl burned alive whose suffering fractured the town into nightmare realms.</p>
+
+    <h2 class="section-title">Visitor Guide</h2>
+    <ul>
+      <li><strong>What to Expect:</strong> Limited visibility, sirens, rusted chains, unpredictable reality.</li>
+      <li><strong>Recommended Gear:</strong> Flashlight, sturdy boots, a firm grasp on your own trauma.</li>
+      <li><strong>Activities:</strong> Foggy walks, cult spotting, alternate dimension sightseeing.</li>
+      <li><strong>What Not to Do:</strong> Do not enter the church. Do not follow the child in white. Do not listen to the siren.</li>
+    </ul>
+
+    <h2 class="section-title">Access & Travel</h2>
+    <p>Accessible only through dense fog and personal loss. GPS will fail. May require unresolved guilt or nightmares as entry key.</p>
+
+    <h2 class="section-title">Traveler Reviews</h2>
+    <div class="quote">"I came with my fiancé. I left with guilt, trauma, and a souvenir hoodie. 5/5 experience."</div>
+    <div class="quote">"The ash was a bit much. But the creatures? *Chef's kiss.*"
+    <br />– Judith, Ohio</div>
+
+    <div class="btn-section">
+      <button class="book-btn" id="bookBtn">Book Now</button>
+      <br /><a href="index.html" class="back-link">← Return to All Destinations</a>
+    </div>
+  </main>
+
+  <script>
+    const btn = document.getElementById('bookBtn');
+    btn.addEventListener('click', () => {
+      if (btn.textContent === 'Book Now') {
+        btn.textContent = 'Booked!';
+      } else {
+        alert('Error: The fog does not allow second thoughts.');
+      }
+    });
+  </script>
+</body>
+<script src="script.js"></script>
+</html>

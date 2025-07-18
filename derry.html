@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Derry, Maine — Book of the Doomed</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="favonpng (1).png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Spectral SC', serif;
+      background-color: #0f0f0f;
+      color: #e0e0e0;
+    }
+    .hero {
+      background-image: url('https://upload.wikimedia.org/wikipedia/en/b/bd/Town_of_derry.png');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .hero p {
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      line-height: 1.6;
+    }
+    .section-title {
+      font-size: 1.6rem;
+      margin-top: 2rem;
+      color: #ff6666;
+    }
+    .danger {
+      color: crimson;
+      font-weight: bold;
+    }
+    .quote {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      border-left: 4px solid #ff6666;
+      font-style: italic;
+      margin: 1.5rem 0;
+    }
+    .btn-section {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .book-btn {
+      background-color: #3e3e3e;
+      border: 1px solid #999;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .book-btn:hover {
+      background-color: crimson;
+      border-color: #fff;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #aaa;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Derry, Maine</h1>
+    <p>It feeds on fear — and you just booked a front row seat.</p>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Overview</h2>
+    <p><strong>Genre:</strong> Supernatural Horror<br />
+    <strong>First Appearance:</strong> IT (2017 film adaptation)<br />
+    <strong>Danger Level:</strong> <span class="danger">🩸🩸🩸🩸</span></p>
+
+    <h2 class="section-title">The Lore</h2>
+    <p>Derry is a small New England town with a sinister secret: every 27 years, a cosmic evil awakens to feast on the fears — and flesh — of its children. Its favorite form is Pennywise the Dancing Clown, but It is older than memory and crueler than death. Red balloons are its warning signs. Sewer grates are its hunting ground.</p>
+    
+    <p>Strange disappearances, forgotten massacres, and an entire town with selective memory? Something’s definitely wrong here. Don’t expect the locals to talk.</p>
+
+    <h2 class="section-title">Visitor Guide</h2>
+    <ul>
+      <li><strong>What to Expect:</strong> Storm drains, vintage movie theaters, creepy clowns, and random floating children.</li>
+      <li><strong>Recommended Gear:</strong> Yellow raincoat, red balloon (for peace offering), flashlight, and strong childhood trauma.</li>
+      <li><strong>Activities:</strong> Sewer tours, float parades, cursed carnival games, scream therapy.</li>
+      <li><strong>What Not to Do:</strong> Don’t accept popcorn from clowns. Don’t go into the sewers alone. Don’t split up. Ever.</li>
+    </ul>
+
+    <h2 class="section-title">Access & Travel</h2>
+    <p>Located in Maine, Derry exists on no official map and is surrounded by thick woods and thicker denial. Only visible if you're afraid.</p>
+
+    <h2 class="section-title">Traveler Reviews</h2>
+    <div class="quote">"I floated. I screamed. Would do again, 10/10."</div>
+    <div class="quote">"My kid disappeared, but hey — the sewer system’s impressive!"
+    <br />– Travis, Connecticut</div>
+
+    <div class="btn-section">
+      <button class="book-btn" id="bookBtn">Book Now</button>
+      <br /><a href="index.html" class="back-link">← Return to All Destinations</a>
+    </div>
+  </main>
+
+  <script>
+    const btn = document.getElementById('bookBtn');
+    btn.addEventListener('click', () => {
+      if (btn.textContent === 'Book Now') {
+        btn.textContent = 'Booked!';
+      } else {
+        alert('Error: Once you float, there’s no going back.');
+      }
+    });
+  </script>
+</body>
+<script src="script.js"></script>
+</html>

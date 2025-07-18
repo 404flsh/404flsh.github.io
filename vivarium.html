@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vivarium — Book of the Doomed</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="favonpng (1).png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Spectral SC', serif;
+      background-color: #000;
+      color: #eee;
+    }
+    .hero {
+      background-image: url('https://i0.wp.com/danksee.com/wp-content/uploads/2022/04/vivarium-row-houses.jpg?fit=1024%2C576&ssl=1');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .hero p {
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      line-height: 1.6;
+    }
+    .section-title {
+      font-size: 1.6rem;
+      margin-top: 2rem;
+      color: #ff1a1a;
+    }
+    .danger {
+      color: crimson;
+      font-weight: bold;
+    }
+    .quote {
+      background-color: #111;
+      padding: 1rem;
+      border-left: 4px solid #ff1a1a;
+      font-style: italic;
+      margin: 1.5rem 0;
+    }
+    .btn-section {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .book-btn {
+      background-color: #1a1a1a;
+      border: 1px solid #888;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .book-btn:hover {
+      background-color: crimson;
+      border-color: #fff;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #aaa;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Vivarium</h1>
+    <p>Suburban maze of identical streets and eerie neighbors — escape is just an illusion.</p>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Overview</h2>
+    <p><strong>Genre:</strong> Psychological Horror / Sci-Fi<br />
+    <strong>First Appearance:</strong> Vivarium (2019)<br />
+    <strong>Danger Level:</strong> <span class="danger">🩸🩸</span></p>
+
+    <h2 class="section-title">The Horror</h2>
+    <p>Welcome to Vivarium, a suburban labyrinth where every house looks the same and escape is impossible. Trapped in this endless loop, the inhabitants face isolation, existential dread, and unsettling neighbors who are anything but normal.</p>
+
+    <h2 class="section-title">Visitor Guide</h2>
+    <ul>
+      <li><strong>What to Expect:</strong> Endless rows of cookie-cutter homes, creeping paranoia, and a sense that you’re always being watched.</li>
+      <li><strong>Recommended Gear:</strong> Maps won’t help, but a keen mind and a strong grip on reality are essential.</li>
+      <li><strong>Activities:</strong> Maze walks, existential dread sessions, and enjoying hands-on parenting experience with a locally sourced child (Growth rate: Accelerated. Love: Optional.).</li>
+      <li><strong>What Not to Do:</strong> Attack your local sourced son  or expect to leave anytime soon!.</li>
+    </ul>
+
+    <h2 class="section-title">Access & Travel</h2>
+    <p>Directions? You don’t need them. You’ll find it anyway — or maybe it finds you.</p>
+
+    <h2 class="section-title">Traveler Reviews</h2>
+    <div class="quote">"Every street looks the same. I still don’t know if I ever left. -Mark"</div>
+    <div class="quote">"Pros: No commute. No bills. No aging (visibly). Cons: The child’s humming is… not organic. The food boxes taste like static. Sometimes, at night, the streetlights flicker in a pattern. I think they’re counting down. Would recommend for minimalist living! - L&S."</div>
+
+    <div class="btn-section">
+      <button class="book-btn" id="bookBtn">Book Now</button>
+      <br /><a href="index.html" class="back-link">← Return to All Destinations</a>
+    </div>
+  </main>
+
+  <script>
+    const btn = document.getElementById('bookBtn');
+    btn.addEventListener('click', () => {
+      if (btn.textContent === 'Book Now') {
+        btn.textContent = 'Booked!';
+      } else {
+        alert('Error: You cannot leave Vivarium once booked.');
+      }
+    });
+  </script>
+</body>
+<script src="script.js"></script>
+</html>
